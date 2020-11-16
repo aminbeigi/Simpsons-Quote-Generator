@@ -1,24 +1,26 @@
-let API_URL = 'https://thesimpsonsquoteapi.glitch.me/quotes';
+const API_URL = 'https://thesimpsonsquoteapi.glitch.me/quotes';
 
-
-function fetchData(url) {
+const fetchData = async (url) => {
     let request = new XMLHttpRequest();
     // open a new connection, using the GET request on the URL endpoint
     request.open('GET', url, false);
     request.send(null);
-    jsonResponse = JSON.parse(request.responseText)
-    return jsonResponse;
+    jsonResponse = JSON.parse(request.responseText);
+    return new Promise((resolve) => { resolve(jsonResponse)});
 }
 
-data = fetchData(API_URL);
+const generateQuoteBtn = document.querySelector('[data-generate-quote]');
 
-let quoteElement = document.querySelector('[data-quote]');
-let quotecharacter = document.querySelector('[data-character]');
-let generateQuoteBtn = document.querySelector('[data-generate-quote]');
+generateQuoteBtn.addEventListener('click', () => {
+    const quoteElement = document.querySelector('[data-quote]');
+    const quoteCharacter = document.querySelector('[data-character]');
+    if (!quoteElement || !quoteCharacter) {
+        throw new Error('Missing Elements')
+    }
 
-console.log(quoteElement);
-console.log(quotecharacter);
-console.log(generateQuoteBtn.innerHTML);
-
-
-quoteElement.innerHTML = data[0]['quote'];
+    fetchData(API_URL).then((data) => {
+            quoteElement.innerHTML = data[0]['quote'];  
+            quoteCharacter.innerHTML = data[0]['character'];
+        }
+    )
+})
