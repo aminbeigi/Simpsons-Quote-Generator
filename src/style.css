@@ -20,8 +20,14 @@ body, html {
 
 .quote {
     color: white;
+    font-size: 72px;
 }
 
-.quote p{
-    font-size: 50px;
+.quote-character {
+    color: white;
+    font-size: 40px;
+}
+
+.generate-quote {
+    font-size: 25px;
 }
