@@ -1,0 +1,27 @@
+body, html {
+    background-color: rgb(19, 19, 20);
+    font-family: sans-serif;   
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+#wrapper {
+    min-height: 100vh;
+    position: relative; 
+}
+
+.container {
+    padding: 50px;
+    text-align: center;
+    border: 5px solid red;
+}
+
+.quote {
+    color: white;
+}
+
+.quote p{
+    font-size: 50px;
+}
