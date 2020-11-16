@@ -12,7 +12,7 @@ body, html {
     position: relative; 
 }
 
-.container {
+.container-quote {
     padding: 50px;
     text-align: center;
     border: 5px solid red;
@@ -32,4 +32,9 @@ body, html {
 
 .generate-quote {
     font-size: 25px;
+}
+
+.container-image {
+    margin-top: 50px;
+    text-align: center;
 }
