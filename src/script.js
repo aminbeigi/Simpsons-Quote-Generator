@@ -24,7 +24,7 @@ const loadRandomQuote = () => {
     generateQuoteBtn.style.display = 'none';
     quoteLoaderElement.style.display = 'block';
 
-    const promise =  fetchData();
+    const promise = fetchData();
     promise.then((data) => {
             quoteElement.innerHTML = data[0]['quote'];
             quoteCharacterElement.innerHTML = data[0]['character'];
@@ -41,7 +41,7 @@ const loadRandomQuote = () => {
     )
 }
 
-// on page load load content
+// on page load, show elements
 loadRandomQuote();
 
 generateQuoteBtn.addEventListener('click', loadRandomQuote);
