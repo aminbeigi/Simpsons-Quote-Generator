@@ -10,6 +10,7 @@ body, html {
 #wrapper {
     min-height: 100vh;
     position: relative; 
+    border: 5px solid green;
 }
 
 .container-quote {
@@ -36,6 +37,6 @@ body, html {
 }
 
 .container-image {
-    margin-top: 50px;
+    position: relative;
     text-align: center;
 }
