@@ -13,9 +13,10 @@
 </p>
 
 ## Description
-Simpsons-Quote-Generator uses the API simspsonsquoteapi to generate a random quote, character and image.
+Simpsons-Quote-Generator uses an API to generate a random quote, character and image originating from a Simpsons character.
 
 ## Demo
+https://jsfiddle.net/aminbeigi/wa628jef/
 
 ## Acknowledgements
 API: https://thesimpsonsquoteapi.glitch.me/
