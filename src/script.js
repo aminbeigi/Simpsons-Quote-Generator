@@ -17,7 +17,7 @@ const loadRandomQuote = () => {
         throw new Error("Missing Elements");
     }
 
-    // until promise is resolved
+    // loading screen
     quoteElement.innerHTML = 'Loading...';
     quoteCharacterElement.innerHTML = '';
     quoteImageElement.style.display = 'none';
@@ -30,7 +30,7 @@ const loadRandomQuote = () => {
             quoteCharacterElement.innerHTML = data[0]['character'];
             quoteImageElement.src = data[0]['image'];
 
-            //  show elements when promise when elements are loaded in
+            // show elements
             quoteImageElement.style.display = 'block';
             generateQuoteBtn.style.display = 'block';
             quoteLoaderElement.style.display = 'none';
