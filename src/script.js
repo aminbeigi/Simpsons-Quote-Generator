@@ -14,25 +14,31 @@ const loadRandomQuote = async () => {
     const quoteImageElement = document.querySelector('[data-quote-image]');
     const quoteLoaderElement = document.querySelector('[data-loader]');
     if (!quoteElement || !quoteCharacterElement || !quoteImageElement) {
-        throw new Error('Missing Elements');
+        throw new Error("Missing Elements");
     }
 
+    // until promise is resolved
     quoteElement.innerHTML = 'Loading...';
     quoteCharacterElement.innerHTML = '';
-
     quoteImageElement.style.display = 'none';
+    generateQuoteBtn.style.display = 'none';
     quoteLoaderElement.style.display = 'block';
+
     
 
     const promise = fetchData();
     promise.then((data) => {
             quoteElement.innerHTML = data[0]['quote'];
             quoteCharacterElement.innerHTML = data[0]['character'];
-
-            quoteImageElement.style.display = 'block';
-            quoteLoaderElement.style.display = 'none';
-
             quoteImageElement.src = data[0]['image'];
+
+            //  show elements when promise when elements are loaded in
+            quoteImageElement.style.display = 'block';
+            generateQuoteBtn.style.display = 'block';
+            quoteLoaderElement.style.display = 'none';
+        },
+        () => {
+            throw new Error("Couldn't fetch API.");
         }
     )
 }
