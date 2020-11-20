@@ -1,12 +1,9 @@
 const API_URL = 'https://thesimpsonsquoteapi.glitch.me/quotes';
 
-const fetchData = async (url) => {
-    let request = new XMLHttpRequest();
-    // open a new connection, using the GET request on the URL endpoint
-    request.open('GET', url, false);
-    request.send(null);
-    jsonResponse = JSON.parse(request.responseText);
-    return jsonResponse;
+const fetchData = async () => {
+    const response = await fetch(API_URL);
+    const data = await response.json();
+    return data;
 }
 
 const generateQuoteBtn = document.querySelector('[data-generate-quote]');
@@ -21,7 +18,7 @@ generateQuoteBtn.addEventListener('click', () => {
 
     quoteElement.innerHTML = 'Loading...';
 
-    const promise = fetchData(API_URL);
+    const promise = fetchData();
     promise.then((data) => {
             quoteElement.innerHTML = data[0]['quote'];
             quoteCharacterElement.innerHTML = data[0]['character'];
