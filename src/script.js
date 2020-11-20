@@ -8,7 +8,7 @@ const fetchData = async () => {
 
 const generateQuoteBtn = document.querySelector('[data-generate-quote]');
 
-const loadRandomQuote = async () => {
+const loadRandomQuote = () => {
     const quoteElement = document.querySelector('[data-quote]');
     const quoteCharacterElement = document.querySelector('[data-character]');
     const quoteImageElement = document.querySelector('[data-quote-image]');
@@ -24,9 +24,7 @@ const loadRandomQuote = async () => {
     generateQuoteBtn.style.display = 'none';
     quoteLoaderElement.style.display = 'block';
 
-    
-
-    const promise = fetchData();
+    const promise =  fetchData();
     promise.then((data) => {
             quoteElement.innerHTML = data[0]['quote'];
             quoteCharacterElement.innerHTML = data[0]['character'];
