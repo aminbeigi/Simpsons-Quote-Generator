@@ -21,13 +21,13 @@ body, html {
 
 .quote {
     color: white;
-    font-size: 72px;
-    margin-bottom: 20px;
+    font-size: 48px;
+    margin-bottom: 48px;
 }
 
 .quote-character {
     color: white;
-    font-size: 40px;
+    font-size: 32px;
     margin-bottom: 20px;
     font-style: italic;
 }
