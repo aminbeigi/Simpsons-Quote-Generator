@@ -6,7 +6,6 @@ body, html {
     list-style: none;
     text-decoration: none;
     background-color: #ffd90f;
-    -webkit-text-stroke: 1.5px black;
 }
 
 #wrapper {
@@ -23,6 +22,7 @@ body, html {
     color: white;
     font-size: 48px;
     margin-bottom: 48px;
+    -webkit-text-stroke: 1.5px black;
 }
 
 .quote-character {
@@ -30,10 +30,14 @@ body, html {
     font-size: 32px;
     margin-bottom: 20px;
     font-style: italic;
+    -webkit-text-stroke: 1.5px black;
 }
 
-.generate-quote {
+.generate-quote-btn {
     font-size: 25px;
+    text-align: center;  
+    margin: 0 auto; 
+    background-color: transparent;
 }
 
 .container-image img {
