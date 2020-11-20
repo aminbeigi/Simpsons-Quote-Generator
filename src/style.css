@@ -5,18 +5,18 @@ body, html {
     padding: 0;
     list-style: none;
     text-decoration: none;
+    background-color: #ffd90f;
+    -webkit-text-stroke: 1.5px black;
 }
 
 #wrapper {
     min-height: 100vh;
     position: relative; 
-    border: 5px solid green;
 }
 
 .container-quote {
     padding: 50px;
     text-align: center;
-    border: 5px solid red;
 }
 
 .quote {
@@ -36,9 +36,9 @@ body, html {
     font-size: 25px;
 }
 
-.container-image {
-    position: relative;
+.container-image img {
     text-align: center;
+    margin: 0 auto;
 }
 
 .loader {
@@ -48,9 +48,11 @@ body, html {
     width: 120px;
     height: 120px;
     animation: spin 2s linear infinite;
-  }
+    text-align: center;
+    margin: 0 auto;
+}
   
-  @keyframes spin {
+@keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
-  }
+}
