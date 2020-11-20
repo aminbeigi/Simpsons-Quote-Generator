@@ -17,6 +17,7 @@ generateQuoteBtn.addEventListener('click', () => {
     }
 
     quoteElement.innerHTML = 'Loading...';
+    //quoteImageElement.style.display = 'none';
 
     const promise = fetchData();
     promise.then((data) => {
