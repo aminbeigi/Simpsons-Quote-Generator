@@ -20,7 +20,7 @@ https://jsfiddle.net/aminbeigi/wa628jef/
 
 ## Acknowledgements
 API: https://thesimpsonsquoteapi.glitch.me/  
-Font: https://www.onlinewebfonts.com/
+Akbar Font: https://www.onlinewebfonts.com/
 
 ## Contributions
 Contributions are always welcome!  
