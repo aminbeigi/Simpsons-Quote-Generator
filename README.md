@@ -19,7 +19,7 @@ Simpsons-Quote-Generator uses an API to generate a random quote, character and i
 https://jsfiddle.net/aminbeigi/wa628jef/
 
 ## Acknowledgements
-API: https://thesimpsonsquoteapi.glitch.me/
+API: https://thesimpsonsquoteapi.glitch.me/  
 Font: https://www.onlinewebfonts.com/
 
 ## Contributions
