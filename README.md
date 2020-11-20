@@ -13,7 +13,7 @@
 </p>
 
 ## Description
-Simpsons-Quote-Generator uses an API to generate a random quote, character and image originating from a Simpsons character.
+Simpsons-Quote-Generator uses an API to generate a random quote, character and image originating from a Simpson's character.
 
 ## Demo
 https://jsfiddle.net/aminbeigi/wa628jef/
