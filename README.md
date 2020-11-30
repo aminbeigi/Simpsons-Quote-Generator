@@ -1,5 +1,5 @@
 <p align="center">
-<img src="src/icon.png"/>
+<img src="images/icon.png"/>
 <br/>
 <h3 align="center">Simpsons Quote Generator</h3>
 <p align="center">Source code for Simpsons-Quote-Generator. Powered by Javascript, HTML and CSS.</p>
